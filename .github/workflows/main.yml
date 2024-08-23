@@ -22,12 +22,12 @@ jobs:
     # steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
       - name: Setup Node.js environment
-      uses: actions/setup-node@v4.0.3
-      with:
-        # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
-        node-version: 16.13.2
-        # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.
-       
+        uses: actions/setup-node@v3.0.0
+        with:
+          # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
+          node-version: 16.13.2
+          # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.
+         
