@@ -30,4 +30,11 @@ jobs:
           # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
           node-version: 16.13.2
           # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.
-         
+       
+      - name: MOCHA and packet installed to test
+        run:
+          cd src;
+          npm install -g mocha;
+          npm install
+          
+       
