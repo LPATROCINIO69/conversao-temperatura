@@ -46,6 +46,6 @@ jobs:
           context: src    
           file: src/Dockerfile
           push: true
-          tags: /
+          tags: |
             lpatrocinio69/aula-conversao-temperatura:v1
             lpatrocinio69/aula-conversao-temperatura:latest
