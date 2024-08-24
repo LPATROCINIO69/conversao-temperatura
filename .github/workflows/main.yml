@@ -55,5 +55,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            lpatrocinio69/aula-conversao-temperatura:${{github.run_number}}
+            lpatrocinio69/aula-conversao-temperatura:v${{github.run_number}}
             lpatrocinio69/aula-conversao-temperatura:latest
